@@ -6,8 +6,8 @@ export default class Dialog extends Phaser.GameObjects.Container {
         super(scene, x, y);
 
         this.balloon = scene.add.graphics();
-        this.balloon.fillStyle(0xffffff, 0.9);
-        this.balloon.fillRoundedRect(-115, 190, 200, 50, 10);
+        this.balloon.fillStyle(0xffffff, 0.7);
+        this.balloon.fillRoundedRect(-110, 190, 200, 50, 10);
 
         this.text = scene.add.text(-10, 210, text, {
             color: '#000000',
@@ -25,7 +25,7 @@ export default class Dialog extends Phaser.GameObjects.Container {
         setTimeout(() => {
             this.setVisible(false);
             this.destroy;
-        }, 3000); 
+        }, 2000); 
 
     }
 }
