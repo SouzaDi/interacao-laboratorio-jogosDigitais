@@ -6,11 +6,11 @@ export default class Dialog extends Phaser.GameObjects.Container {
         super(scene, x, y);
 
         this.balloon = scene.add.graphics();
-        this.balloon.fillStyle(0xffffff, 0.7);
+        this.balloon.fillStyle(0x3d3d3c, 0.7);
         this.balloon.fillRoundedRect(-110, 190, 200, 50, 10);
 
         this.text = scene.add.text(-10, 210, text, {
-            color: '#000000',
+            color: '#ffffff',
             fontSize: '13px',
             wordWrap: {width: 180},
             align:'center'
